@@ -20,7 +20,23 @@
 
 <body>
 
-<header>cabezote </header>
+<center><h3>Formulario</h3>
+<form>
+
+<label for="texto"> Entrada de Texto</label>
+	<input id="texto" type="text" placeholder="Entrada de texto" value="">
+	
+	<br>
+	<br>
+</form>
+</center>
+
+<header>
+
+<div id="logotipo"> Logotipo </div>
+
+</header>
+
  <nav>
  	barra de navegacion
  </nav>
@@ -28,7 +44,11 @@
  <section>Seccion proncipal
  </section>
  
- <aside>Columna
+ <aside>
+ <div class="Noticias">Noticia 1</div>
+ <div class="Noticias"> Noticia 2</div>
+ <div class="Noticias">Noticia 3</div>
+ 
  </aside>
  
  <article>
@@ -48,7 +68,8 @@
  
  <a href = "#"> Vinculo </a>
  
- <img src="img/imagen.jpg">
+ <figure><img src="img/imagen.jpg"></figure>
+ <figcaption> pie de pagina a la imagenes</figcaption>
  
  <ol>
  	<li> Carro </li>
@@ -58,24 +79,29 @@
  </ol>
  
  <table border="1"> 
+ 
+ <thead>
  <tr>
      <th> Mes </th> 
 	 <th> Ahorro </th> 
  
  </tr>
+ </thead>
  
+ <tbody>
   <tr>
-     <th> Enero </th> 
-	 <th> $300 </th> 
+     <td> Enero </td> 
+	 <td> $300 </td> 
  
  </tr>
  
   <tr>
-     <th> Febrero </th> 
-	 <th> $200 </th> 
+     <td> Febrero </td> 
+	 <td> $200 </td> 
  
  </tr>
  
+	 </tbody>
  </table>
  
  <h1>Resultado del Examen </h1>
@@ -83,6 +109,29 @@
  <p>Andres : <meter value="60" min="0" max="100" high="96"></meter></p>
  <p>Ana :    <meter value="85" min="0" max="100" high="96"></meter></p>
  <p>Pedro :  <meter value="45" min="0" max="100" high="96"></meter></p>
+ 
+ <h2>Resultado de las Ventas</h2>
+ 
+ <p>Enero: <progress value="94" min="0" max="100"></progress></p>
+ <p>Febrero: <progress value="84" min="0" max="100"></progress></p>
+ <p>Marzo: <progress value="30" min="0" max="100"></progress></p>
+ <p>Abril: <progress value="54" min="0" max="100"></progress></p>
+ 
+	<audio controls loop preload="auto">
+		<source src ="audio/audio.m4a" type="audio/mp4">		
+		
+	</audio>
+	
+	<video controls loop width="500" height="200">
+		
+		<source src="video/video.mp4" type="video/mp4">
+		<source src="video/video.ogv" type="video/ogg">
+		<source src="video/video.webm" type="video/webm">
+	</video>
+	
+	<iframe width="500" height="280" src="https://www.youtube.com/embed/ws00k_lIQ9U " frameborder="0" allowfullscreen></iframe>
+	
+	  
  
  <footer>Este es el pie de Pagina</footer>
  
